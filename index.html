@@ -1,21 +1,51 @@
-<!DOCTYPE html>
 <html>
 <head>
-<meta charset="utf-8">
-<title>Project: Travel webpage</title>
+<style>
+.item1 {
+  grid-area: myArea;
+}
+
+.grid-container {
+  display: grid;
+  grid-template:
+  'myArea myArea . . .'
+  'myArea myArea . . .';
+  grid-gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+</style>
 </head>
 <body>
 
-<h1>Travel to Costa Rica</h1>
-<p>...and you'll get to see these beauties!</p>
-<img src="https://photo-cms-plo.zadn.vn/w653/Uploaded/2021/xpckxpiu/2019_03_02/marvel_hecc.jpg" alt="Marvel" width="200"/>
-  <div class="wrapper">
-  <div class="one">One</div>
-  <div class="two">Two</div>
-  <div class="three">Three</div>
-  <div class="four">Four</div>
-  <div class="five">Five</div>
-  <div class="six">Six</div>
+<h1>The grid-template Property</h1>
+
+<p>The grid-template property can also specify rows/columns using named grid items</p>
+<p>To specify two rows, make one more sequence </p>
+<p>Each row is defined by apostrophes (' ').</p>
+<p>"myArea" will span the first two columns, in the first two rows:</p>
+
+<div class="grid-container">
+  <div class="item1">1</div>
+  <div class="item2">2</div>
+  <div class="item3">3</div>  
+  <div class="item4">4</div>
+  <div class="item5">5</div>
+  <div class="item6">6</div>
+  <div class="item7">7</div>
+  <div class="item8">8</div>
+  <div class="item9">9</div>
+  <div class="item10">10</div>
+  <div class="item11">11</div>
+  <div class="item12">12</div>
 </div>
-  </body>
+
+</body>
 </html>
